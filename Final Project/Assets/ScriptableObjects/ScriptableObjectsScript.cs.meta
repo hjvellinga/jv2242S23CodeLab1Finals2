@@ -3,7 +3,12 @@ guid: 7c8260bbce7c2a84abc29bc3e67b66bc
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - locationPicture: {instanceID: 0}
+  - startButton: {instanceID: 0}
+  - harborLocation: {fileID: 11400000, guid: 550a39f37bd5fb243a55ce40feced850, type: 2}
+  - gateLocation: {fileID: 11400000, guid: 0fce6eb06f54dc249906b049728e04c7, type: 2}
+  - startLocation: {fileID: 11400000, guid: 20be3d7a095ec06428b1d6c675e11350, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

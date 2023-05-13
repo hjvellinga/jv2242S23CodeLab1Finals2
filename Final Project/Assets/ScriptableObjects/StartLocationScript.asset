@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c8260bbce7c2a84abc29bc3e67b66bc, type: 3}
   m_Name: StartLocationScript
   m_EditorClassIdentifier: 
-  locationName: 
-  locationDescription: 
+  locationName: A map of Huandzay island
+  locationDescription: Choose one of 2 locations
   locationPicture: {fileID: 0}
   startButton: {fileID: 0}
   harborLocation: {fileID: 11400000, guid: 550a39f37bd5fb243a55ce40feced850, type: 2}
