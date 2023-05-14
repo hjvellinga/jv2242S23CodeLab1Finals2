@@ -16,7 +16,7 @@ MonoBehaviour:
   locationDescription: The bollard to which you moored your ship has an interesting
     stamp on the top.
   locationPicture: {fileID: 21300000, guid: 0913099aba2798e4faf2c0deba65ac1f, type: 3}
-  startButton: {fileID: 0}
+  locationButton: {fileID: 2373130204258487354, guid: 7ea52598bb184ea4db3a57b7a9149518, type: 3}
   harborLocation: {fileID: 11400000}
   gateLocation: {fileID: 11400000, guid: 0fce6eb06f54dc249906b049728e04c7, type: 2}
   startLocation: {fileID: 11400000, guid: 20be3d7a095ec06428b1d6c675e11350, type: 2}

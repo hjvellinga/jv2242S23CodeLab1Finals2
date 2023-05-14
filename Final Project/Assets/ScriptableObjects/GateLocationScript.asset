@@ -15,7 +15,7 @@ MonoBehaviour:
   locationName: The Gate
   locationDescription: Eleven inscribed skulls are scattered around a large gate.
   locationPicture: {fileID: 21300000, guid: dc03dbf3b2800ff4f947b5a258aa053c, type: 3}
-  startButton: {fileID: 0}
+  locationButton: {fileID: 2373130204258487354, guid: 7ea52598bb184ea4db3a57b7a9149518, type: 3}
   harborLocation: {fileID: 11400000, guid: 550a39f37bd5fb243a55ce40feced850, type: 2}
   gateLocation: {fileID: 11400000}
   startLocation: {fileID: 11400000, guid: 20be3d7a095ec06428b1d6c675e11350, type: 2}

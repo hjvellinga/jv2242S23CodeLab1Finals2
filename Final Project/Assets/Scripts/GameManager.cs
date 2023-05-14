@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI title;
     public TextMeshProUGUI description; 
-    public Button button;
+    public Button examineButton;
     public Sprite picture;
 
     public ScriptableObjectsScript currentLocation;
@@ -58,10 +58,21 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void UpdateLocation()
     {
+        Debug.Log(message: examineButton);
+        if (examineButton == null)
+        {
+            //don't destroy button
+        }
+        else
+        {
+            Destroy(examineButton); //destroy previous clone
+            Debug.Log(message: "destroyed");
+        }
+        
         title.text = currentLocation.locationName;
         description.text = currentLocation.locationDescription;
-        //button = startButton;
-       //picture = locationPicture; 
+        examineButton = Instantiate(currentLocation.locationButton, GameObject.Find("Canvas").transform);
+        picture = currentLocation.locationPicture; //TODO update sprite by Instantiate, check burn after reading code
     }
 
     public void MoveDirection(int dir)
@@ -80,5 +91,19 @@ public class GameManager : MonoBehaviour
         }
         UpdateLocation();
     }
+
+    public void ChangeButton()
+    {
+        Debug.Log(message: "change button script called "+ currentLocation);
+    }
+   
+   
+    //{
+    //  if (currentLocation == currentLocation.harborLocation)
+    // {
+    //     examineButton = harborLocation.GetComponent<Button>();
+    // }
+    // }
+    
 }
 //TODO: figure out why text isn't loading, how to update the image and the start level button per location

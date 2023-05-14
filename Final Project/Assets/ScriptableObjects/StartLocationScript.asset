@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locationName: A map of Huandzay island
   locationDescription: Choose one of 2 locations
-  locationPicture: {fileID: 0}
-  startButton: {fileID: 0}
+  locationPicture: {fileID: 21300000, guid: 0913099aba2798e4faf2c0deba65ac1f, type: 3}
+  harborButton: {fileID: 0}
+  gateButton: {fileID: 0}
   harborLocation: {fileID: 11400000, guid: 550a39f37bd5fb243a55ce40feced850, type: 2}
   gateLocation: {fileID: 11400000, guid: 0fce6eb06f54dc249906b049728e04c7, type: 2}
   startLocation: {fileID: 11400000}

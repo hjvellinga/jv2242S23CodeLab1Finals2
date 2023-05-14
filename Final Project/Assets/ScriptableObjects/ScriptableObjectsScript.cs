@@ -13,8 +13,7 @@ public class ScriptableObjectsScript : ScriptableObject
     public string locationName;
     public string locationDescription; 
     public Sprite locationPicture;
-    public Button examineGate;
-    public Button examineHarbor;
+    public Button locationButton;
 
     public ScriptableObjectsScript harborLocation;
     public ScriptableObjectsScript gateLocation;
