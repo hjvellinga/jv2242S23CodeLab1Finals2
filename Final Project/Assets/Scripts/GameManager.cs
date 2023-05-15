@@ -59,20 +59,21 @@ public class GameManager : MonoBehaviour
     void UpdateLocation()
     {
         Debug.Log(message: examineButton);
-        if (examineButton == null)
+        if (examineButton == null) //if there is no examineButton gameObject
         {
-            //don't destroy button
+            //don't destroy examineButton
         }
         else
         {
-            Destroy(examineButton); //destroy previous clone
+            Destroy(examineButton.gameObject); //destroy previous clone
             Debug.Log(message: "destroyed");
         }
         
         title.text = currentLocation.locationName;
         description.text = currentLocation.locationDescription;
         examineButton = Instantiate(currentLocation.locationButton, GameObject.Find("Canvas").transform);
-        picture = currentLocation.locationPicture; //TODO update sprite by Instantiate, check burn after reading code
+        picture = Instantiate(currentLocation.locationPicture, GameObject.Find("Canvas").transform);
+            //currentLocation.locationPicture; //TODO update sprite by Instantiate, check burn after reading code
     }
 
     public void MoveDirection(int dir)
@@ -106,4 +107,3 @@ public class GameManager : MonoBehaviour
     // }
     
 }
-//TODO: figure out why text isn't loading, how to update the image and the start level button per location
