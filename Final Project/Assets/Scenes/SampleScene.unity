@@ -1140,6 +1140,7 @@ MonoBehaviour:
   examineButton: {fileID: 0}
   picture: {fileID: 21300000, guid: 5dbc069eb79bd4d43840847264d6d956, type: 3}
   currentLocation: {fileID: 11400000, guid: 20be3d7a095ec06428b1d6c675e11350, type: 2}
+  changeSpriteScript: {fileID: 4167401526026691502, guid: 7ea52598bb184ea4db3a57b7a9149518, type: 3}
 --- !u!4 &1555370506
 Transform:
   m_ObjectHideFlags: 0
@@ -1291,17 +1292,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725390567}
   m_CullTransparentMesh: 1
---- !u!114 &1745438497 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5084967987740113329, guid: 963059347993b8a4db8cfe4ab94ec41f, type: 3}
-  m_PrefabInstance: {fileID: 3198217349838474030}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1804853671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,13 +1850,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6573767027015329211, guid: 963059347993b8a4db8cfe4ab94ec41f, type: 3}
+      propertyPath: spr
+      value: 
+      objectReference: {fileID: 2078095366}
+    - target: {fileID: 6573767027015329211, guid: 963059347993b8a4db8cfe4ab94ec41f, type: 3}
       propertyPath: gateSprite
       value: 
       objectReference: {fileID: 21300000, guid: dc03dbf3b2800ff4f947b5a258aa053c, type: 3}
     - target: {fileID: 6573767027015329211, guid: 963059347993b8a4db8cfe4ab94ec41f, type: 3}
       propertyPath: defaultImage
       value: 
-      objectReference: {fileID: 1745438497}
+      objectReference: {fileID: 0}
     - target: {fileID: 6573767027015329211, guid: 963059347993b8a4db8cfe4ab94ec41f, type: 3}
       propertyPath: harborSprite
       value: 
@@ -1874,6 +1868,10 @@ PrefabInstance:
     - target: {fileID: 7529724346635247042, guid: 963059347993b8a4db8cfe4ab94ec41f, type: 3}
       propertyPath: m_Name
       value: defaultImage
+      objectReference: {fileID: 0}
+    - target: {fileID: 7529724346635247042, guid: 963059347993b8a4db8cfe4ab94ec41f, type: 3}
+      propertyPath: m_TagString
+      value: Default
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 963059347993b8a4db8cfe4ab94ec41f, type: 3}

@@ -89,7 +89,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2bc9b0183c4e1e4690dd6ba134690d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultImage: {fileID: 0}
-  harborSprite: {fileID: 0}
-  gateSprite: {fileID: 0}
+  defaultImage: {fileID: 7937063103257991603, guid: 17bfa008ae18c1b47a052c968fbd95cf, type: 3}
+  spr: {fileID: 3746988498336902434, guid: 17bfa008ae18c1b47a052c968fbd95cf, type: 3}
+  harborSprite: {fileID: 21300000, guid: 0913099aba2798e4faf2c0deba65ac1f, type: 3}
+  gateSprite: {fileID: 21300000, guid: dc03dbf3b2800ff4f947b5a258aa053c, type: 3}
+  locationSpriteButton: {fileID: 0}
   currentLocation: {fileID: 0}

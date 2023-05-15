@@ -9,19 +9,21 @@ using Unity.VisualScripting;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    
+
     public bool puzzleLevel = true;
     public AudioSource puzzleMusic;
-    
+
     public Button harborLocation;
     public Button gateLocation;
 
     public TextMeshProUGUI title;
-    public TextMeshProUGUI description; 
+    public TextMeshProUGUI description;
     public Button examineButton;
     public Sprite picture;
 
     public ScriptableObjectsScript currentLocation;
+    public ChangeSpriteScript changeSpriteScript;
+
     void Awake()
     {
         if (Instance == null)
@@ -33,8 +35,9 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
+
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +54,7 @@ public class GameManager : MonoBehaviour
              puzzleMusic.Pause();
              Debug.Log("puzzle music paused");
          } */
-        
+
         UpdateLocation();
     }
 
@@ -68,12 +71,12 @@ public class GameManager : MonoBehaviour
             Destroy(examineButton.gameObject); //destroy previous clone
             Debug.Log(message: "destroyed");
         }
-        
+
         title.text = currentLocation.locationName;
         description.text = currentLocation.locationDescription;
         examineButton = Instantiate(currentLocation.locationButton, GameObject.Find("Canvas").transform);
         picture = Instantiate(currentLocation.locationPicture, GameObject.Find("Canvas").transform);
-            //currentLocation.locationPicture; //TODO update sprite by Instantiate, check burn after reading code
+        //currentLocation.locationPicture; //TODO update sprite by Instantiate, check burn after reading code
     }
 
     public void MoveDirection(int dir)
@@ -82,28 +85,36 @@ public class GameManager : MonoBehaviour
         {
             case 0:
                 currentLocation = currentLocation.harborLocation;
-                break; 
+                break;
             case 1:
                 currentLocation = currentLocation.gateLocation;
-                break; 
+                break;
             case 2:
                 currentLocation = currentLocation.startLocation;
-                break; 
+                break;
         }
+
         UpdateLocation();
     }
 
     public void ChangeButton()
     {
-        Debug.Log(message: "change button script called "+ currentLocation);
+        Debug.Log(message: "change button script called " + currentLocation);
     }
-   
-   
-    //{
-    //  if (currentLocation == currentLocation.harborLocation)
-    // {
-    //     examineButton = harborLocation.GetComponent<Button>();
-    // }
-    // }
-    
+
+
+    public void ChangeImage()
+    {
+        if (currentLocation == currentLocation.harborLocation)
+        {
+            examineButton.GetComponent<ChangeSpriteScript>().SpawnSprite(0);
+        }
+
+        if (currentLocation == currentLocation.gateLocation)
+        {
+            examineButton.GetComponent<ChangeSpriteScript>().SpawnSprite(1);
+
+        }
+
+    }
 }
