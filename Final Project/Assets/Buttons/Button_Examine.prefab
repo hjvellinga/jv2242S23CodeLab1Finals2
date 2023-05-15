@@ -258,25 +258,37 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 113ca62237f16f94cba5dc565e41da0d, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 4167401526026691502}
+        m_TargetAssemblyTypeName: ChangeSpriteScript, Assembly-CSharp
+        m_MethodName: SpawnSprite
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 11400000, guid: 550a39f37bd5fb243a55ce40feced850, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ScriptableObjectsScript, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4167401526026691502}
-        m_TargetAssemblyTypeName: ChangeSpriteScript, Assembly-CSharp
-        m_MethodName: SpawnSprite
-        m_Mode: 3
+      - m_Target: {fileID: 5084967987740113329, guid: 963059347993b8a4db8cfe4ab94ec41f, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+        m_MethodName: set_sprite
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 21300000, guid: 0913099aba2798e4faf2c0deba65ac1f, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5084967987740113329, guid: 963059347993b8a4db8cfe4ab94ec41f, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 21300000, guid: dc03dbf3b2800ff4f947b5a258aa053c, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -297,3 +309,4 @@ MonoBehaviour:
   defaultImage: {fileID: 5084967987740113329, guid: 963059347993b8a4db8cfe4ab94ec41f, type: 3}
   harborSprite: {fileID: 21300000, guid: 0913099aba2798e4faf2c0deba65ac1f, type: 3}
   gateSprite: {fileID: 21300000, guid: dc03dbf3b2800ff4f947b5a258aa053c, type: 3}
+  currentLocation: {fileID: 0}

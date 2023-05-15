@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     
     public bool puzzleLevel = true;
     public AudioSource puzzleMusic;
-
+    
     public Button harborLocation;
     public Button gateLocation;
 
